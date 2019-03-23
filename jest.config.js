@@ -1,5 +1,4 @@
 module.exports = {
   preset: 'ts-jest',
-  testEnvironment: 'node',
-  setupFiles: ['core-js']
+  testEnvironment: 'node'
 }
