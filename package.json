@@ -1,0 +1,28 @@
+{
+  "name": "starter",
+  "version": "1.0.0",
+  "description": "A quick up and running node ts project",
+  "main": "index.ts",
+  "scripts": {
+    "test": "jest",
+    "bundle:watch": "webpack --watch",
+    "server": "nodemon --exec node build/server.js",
+    "format": "prettier --write \"**/*.+(ts|json|js|)\"",
+    "start": "concurrently \"yarn run bundle:watch\" \"yarn run server\""
+  },
+  "author": "ctobolski",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jest": "^24.0.11",
+    "@types/node": "^11.11.3",
+    "concurrently": "^4.1.0",
+    "jest": "^24.5.0",
+    "nodemon": "^1.18.10",
+    "prettier": "^1.16.4",
+    "ts-jest": "^24.0.0",
+    "ts-loader": "^5.3.3",
+    "typescript": "^3.3.3333",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.3.0"
+  }
+}
