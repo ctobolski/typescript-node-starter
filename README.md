@@ -6,9 +6,8 @@ Allow you to quickly get up and running with a simple node development environme
 
 ## Key Features
 
-- Code bundling
 - Server reloads on changes
-- Code formatting
+- Code formatting and linting
 - Tests configured for typescript and node environment
 
 ## Usage

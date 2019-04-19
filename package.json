@@ -5,10 +5,10 @@
   "main": "index.ts",
   "scripts": {
     "test": "jest",
-    "bundle:watch": "webpack --watch",
-    "server": "nodemon --exec node build/server.js",
+    "build:watch": "tsc --watch",
+    "server": "nodemon --exec node build/index.js",
     "format": "prettier --write \"**/*.+(ts|json|js|)\"",
-    "start": "concurrently \"yarn run bundle:watch\" \"yarn run server\""
+    "start": "concurrently \"yarn run build:watch\" \"yarn run server\""
   },
   "author": "ctobolski",
   "license": "MIT",
@@ -21,8 +21,9 @@
     "prettier": "^1.16.4",
     "ts-jest": "^24.0.0",
     "ts-loader": "^5.3.3",
-    "typescript": "^3.3.3333",
-    "webpack": "^4.29.6",
-    "webpack-cli": "^3.3.0"
+    "tslint": "5.16.0",
+    "tslint-config-prettier": "1.18.0",
+    "tslint-config-standard": "8.0.1",
+    "typescript": "^3.3.3333"
   }
 }
