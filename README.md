@@ -6,9 +6,8 @@ Allow you to quickly get up and running with a simple node development environme
 
 ## Key Features
 
-- UMD module bundling with [rollup](https://github.com/rollup/rollup)!
 - Server reloads on changes
-- Code formatting and linting
+- Code formatting
 - Tests configured for typescript and node environment
 
 ## Usage

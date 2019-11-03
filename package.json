@@ -5,10 +5,10 @@
   "main": "index.ts",
   "scripts": {
     "test": "jest",
-    "build:watch": "rollup -c --watch",
+    "build:watch": "tsc -c --watch",
     "server": "nodemon --exec node build/bundle.js",
     "format": "prettier --write \"**/*.+(ts|json|js|)\"",
-    "start": "rollup -c && concurrently \"yarn run build:watch\" \"yarn run server\""
+    "start": "tsc  && concurrently \"yarn run build:watch\" \"yarn run server\""
   },
   "author": "ctobolski",
   "license": "MIT",
@@ -19,16 +19,10 @@
     "jest": "^24.5.0",
     "nodemon": "^1.18.10",
     "prettier": "^1.16.4",
-    "rollup": "^1.13.1",
-    "rollup-plugin-typescript": "^1.0.1",
     "ts-jest": "^24.0.0",
     "ts-loader": "^5.3.3",
-    "tslint": "^5.16.0",
     "tslint-config-prettier": "^1.18.0",
     "tslint-config-standard": "^8.0.1",
     "typescript": "^3.6.3"
-  },
-  "dependencies": {
-    "rollup-plugin-run": "^1.1.0"
   }
 }
