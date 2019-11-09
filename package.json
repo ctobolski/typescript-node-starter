@@ -5,7 +5,7 @@
   "main": "index.ts",
   "scripts": {
     "lint": "eslint src/**/*.ts",
-    "format": "prettier --write \"**/*.+(ts|json|js|)\"",
+    "format": "prettier --write \"src/**/*.+(ts|json|js|)\"",
     "analyze": "yarn format && yarn lint",
     "build": "tsc --project tsconfig.build.json",
     "build:watch": "yarn build --watch",
