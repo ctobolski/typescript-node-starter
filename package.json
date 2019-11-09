@@ -5,7 +5,8 @@
   "main": "index.ts",
   "scripts": {
     "test": "jest",
-    "build": "tsc",
+    "build": "tsc --project tsconfig.build.json",
+    "lint": "eslint src/**/*.ts",
     "build:watch": "yarn build --watch",
     "server": "nodemon --exec node build/Main.js",
     "format": "prettier --write \"**/*.+(ts|json|js|)\"",
@@ -16,14 +17,14 @@
   "devDependencies": {
     "@types/jest": "^24.0.11",
     "@types/node": "^11.11.3",
+    "@typescript-eslint/eslint-plugin": "^2.6.1",
+    "@typescript-eslint/parser": "^2.6.1",
     "concurrently": "^4.1.0",
+    "eslint": "^6.6.0",
     "jest": "^24.5.0",
     "nodemon": "^1.18.10",
     "prettier": "^1.16.4",
     "ts-jest": "^24.0.0",
-    "ts-loader": "^5.3.3",
-    "tslint-config-prettier": "^1.18.0",
-    "tslint-config-standard": "^8.0.1",
     "typescript": "^3.6.3"
   }
 }
