@@ -29,5 +29,8 @@
     "prettier": "^1.16.4",
     "ts-jest": "^24.0.0",
     "typescript": "^3.6.3"
+  },
+  "dependencies": {
+    "node-hue-api": "^4.0.5"
   }
 }
