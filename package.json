@@ -32,10 +32,11 @@
     "ts-jest": "^26.3.0",
     "typescript": "^4.0.2"
   },
-  "lint-staged" : {
+  "lint-staged": {
     "*.ts": [
-      "eslint --ext ts", 
+      "eslint --ext ts",
       "prettier --parser typescript --write"
     ]
-  }
+  },
+  "packageManager": "yarn@3.2.3"
 }
